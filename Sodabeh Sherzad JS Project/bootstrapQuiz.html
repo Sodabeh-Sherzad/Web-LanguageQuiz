@@ -1,0 +1,114 @@
+<html>
+
+<head>
+	<title>Web Technologies Hub | HTML Quiz</title>
+	<link rel="stylesheet" type="text/css" href="css/quizStyle.css">
+	<link rel="shortcut icon 16x16" type="text/css" href="css/images/logo.png">
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<a href="index.html">
+				<img src="css/images/logo.png" width="50" height="40">
+			</a>
+			<h1>Bootstrap Quiz</h1>
+			<ul>
+				<li>
+					<a href="#">SignIn</a>
+				</li> &nbsp;|&nbsp;
+				<li>
+					<a href="#">SignUp</a>
+				</li>
+			</ul>
+		</header>
+		<img src="css/images/back.png" id="back" class="bafo">
+		<img src="css/images/forward.png" id="forward" class="bafo">
+		<div id="sidebar-section">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<a href="#">Start Quizzes</a>
+						<ul>
+							<li><br>
+								<a href="htmlQuiz.html">HTML Quiz</a>
+							</li><br>
+							<li>
+								<a href="cssQuiz.html">CSS Quiz</a>
+							</li><br>
+							<li>
+								<a href="jsQuiz.html">JavaScript Quiz</a>
+							</li><br>
+						</ul>
+					</li><br>
+					<li>
+						<a href="#">Useful Resources</a>
+						<ul>
+							<li><br>
+								<a href="https://www.w3schools.com/html/default.asp" target="_blank">Learn HTML</a>
+							</li><br>
+							<li>
+								<a href="https://www.w3schools.com/css/default.asp" target="_blank">Learn CSS</a>
+							</li><br>
+							<li>
+								<a href="https://www.w3schools.com/js/default.asp" target="_blank">Learn JavaScript</a>
+							</li><br>
+							<li>
+								<a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">Learn Bootstrap</a>
+							</li><br>
+							<li>
+								<a href="https://www.w3schools.com/php/default.asp" target="_blank">Learn PHP</a>
+							</li><br>
+						</ul>
+					</li><br>
+				</ul>
+			</div>
+
+			<div id="sections">
+
+				<div id="info">
+					<h2 id="tit">Test your BootStrap skills with Web Technologies Hub</h2>
+					<p>This quiz has <span id="totalQuestions">0</span> questions and there is a time limit for it.</p>
+					<p>This is not an official quiz. But it is nice to see how much you know, do not know, about HTML.</p>
+					<p>You will get <span id="point">0</span> points for each correct answer, and at the end of the quiz, your total score will be displayed.</p>
+					<h3>Good Luck</h3>
+					<button onclick="Questions()" class="start">Play the Quiz</button>
+				</div>
+
+				<div id="quiz">
+					<progress id="progressBar" value="0" max="100"></progress>
+					<div id="counter">0</div>
+
+
+					<div id="question">
+						<p>
+							Which one is correct of this Singular answer?</p>
+					</div>
+
+					<div id="answers">
+						<a class="l">
+							<span id="a" class="e">a&nbsp; &nbsp;</span><button id="btn0" class="btn" onclick="checkAnswer(this.value)" value="A">HTML</button>
+						</a>
+						<a>
+							<span id="b" class="e">b&nbsp; &nbsp;</span><button id="btn1" class="btn" onclick="checkAnswer(this.value)" value="B">CSS</button>
+						</a>
+						<a class="l">
+							<span id="c" class="e">c&nbsp; &nbsp;</span><button id="btn2" class="btn" onclick="checkAnswer(this.value)" value="C">JavaScript</button>
+						</a>
+						<a>
+							<span id="d" class="e">d&nbsp; &nbsp;</span><button id="btn3" class="btn" onclick="checkAnswer(this.value)" value="D">Exit</button>
+						</a>
+					</div>
+					<button id="next">Next</button>
+					<p id="count">1 of 5</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer></footer>
+	<script type="text/javascript" src="js/bootstrapQuiz.js"></script>
+	
+</body>
+
+</html>

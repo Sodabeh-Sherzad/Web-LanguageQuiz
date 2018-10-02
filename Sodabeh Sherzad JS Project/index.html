@@ -1,0 +1,151 @@
+<html>
+
+<head>
+	<title>Web Technologies Hub</title>
+	<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+	<link rel="shortcut icon 16x16" type="text/css" href="css/images/logo.png">
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<a href="index.html">
+				<img src="css/images/logo.png" width="50" height="40">
+			</a>
+			<h1>Web Technologies Hub</h1>
+			<ul>
+				<li>
+					<a href="#">SignIn</a>
+				</li> &nbsp;|&nbsp;
+				<li>
+					<a href="#">SignUp</a>
+				</li>
+			</ul>
+		</header>
+		<img src="css/images/back.png" id="back" class="bafo">
+		<img src="css/images/forward.png" id="forward" class="bafo">
+		<div id="sidebar-section">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<a href="#">Start Quizzes</a>
+						<ul>
+							<li><br>
+								<a href="htmlQuiz.html">HTML Quiz</a>
+							</li><br>
+							<li>
+								<a href="cssQuiz.html">CSS Quiz</a>
+							</li><br>
+							<li>
+								<a href="jsQuiz.html">JavaScript Quiz</a>
+							</li><br>
+						</ul>
+					</li><br>
+					<li>
+						<a href="#">Useful Resources</a>
+						<ul>
+							<li><br>
+								<a href="https://www.w3schools.com/html/default.asp" target="_blank">Learn HTML</a>
+							</li><br>
+							<li>
+								<a href="https://www.w3schools.com/css/default.asp" target="_blank">Learn CSS</a>
+							</li><br>
+							<li>
+								<a href="https://www.w3schools.com/js/default.asp" target="_blank">Learn JavaScript</a>
+							</li><br>
+							<li>
+								<a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">Learn Bootstrap</a>
+							</li><br>
+							<li>
+								<a href="https://www.w3schools.com/php/default.asp" target="_blank">Learn PHP</a>
+							</li><br>
+						</ul>
+					</li><br>
+				</ul>
+			</div>
+
+			<div id="sections">
+				<a href="#" id="about" class="l"><img id="about" onclick="about()" src="css/images/about,.png" width="30" height="30"></a>
+					<a href="#" id="help"><img id="help" onclick="help()" src="css/images/help.png" width="30" height="30"></a>
+				<div id="title">
+					<h1>Welcome to Web Technologies Hub</h1>
+				</div>
+
+				<div id="question">
+					<p>Please choose one of your favorite languages!</p>
+				</div>
+
+				<div id="answers">
+					
+					<a href="htmlQuiz.html" class="l">
+						<button onclick="Questions()">HTML Quiz</button>
+					</a>
+					<a href="cssQuiz.html">
+						<button onclick="Questions()">CSS Quiz</button>
+					</a>
+					<a href="jsQuiz.html" class="l">
+						<button onclick="Questions()">JavaScript Quiz</button>
+					</a>
+					<a href="bootstrapQuiz.html">
+						<button onclick="Questions()">Bootstrap Quiz</button>
+					</a>
+					
+				</div>
+			</div>
+			<div id="info"></div>
+		</div>
+	</div>
+	<footer></footer>
+	<script type="text/javascript">
+		var backward = document.getElementById("back");
+		var forward = document.getElementById("forward");
+		backward.style.display = "none";
+
+		forward.onclick = function () {
+			var side = document.getElementById("sidebar");
+			side.style.display = "block";
+			side.style.height = "89%";
+			forward.style.display = "none";
+			backward.style.display = "block";
+		}
+
+		backward.onclick = function () {
+			var side = document.getElementById("sidebar");
+			side.style.display = "none";
+			forward.style.display = "block";
+			backward.style.display = "none";
+		}
+
+
+		let section = document.getElementById("sections");
+		let info = document.getElementById("info");
+		info.style.display = "none";
+		
+		function help() {
+			info.style.display = "block";
+			section.style.display = "none";
+			info.innerHTML = `<h1 id="title">Test your HTML skills</h1>
+				<h2>Test your HTML, CSS, JS, Bootstrap and other web skills with Web Technologies Hub</h2>
+					<p class="para">Each quiz consists of 15 questions. Please note that there is a time limit for each question.
+					<P class="para">These quizzes are not official quizzes. However, it is nice to see how much you know or do not know about Web Design and Technologies.
+					<p class="para">You will get points for each correct answer and at the end of each quiz your total score will be displayed.
+					<h2 class="para1">Good Luck</h2>
+                            <a href="index.html" id="exit" class="load">&times;</a>`;
+
+        }
+
+        function about() {
+			info.style.display = "block";
+			section.style.display = "none";
+			info.innerHTML = `<h2 id="title">About Me</h2>
+					<p class="para">These quizzes are designed and developed by Sodabeh Sherzad using #HTML, #CSS, #JavaScript, #Bootstrap and other web technologies from scratch.
+					<P class="para">I made these quizzes for fun and in order to cleverly apply my knowledge and skills in real-world situations and examples.
+					<h2 class="para1">Thank you</h2>
+                            <a href="index.html" id="exit" class="load">&times;</a>`;
+
+            }
+
+	</script>
+</body>
+
+</html>

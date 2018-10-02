@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  background-color: black;
+  height: 11%;
+  position: relative;
+}
+
+header img {
+  position: absolute;
+  top: 28%;
+  left: 3%;
+  margin: auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+header h1 {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  color: rgb(0, 230, 230);
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+header ul {
+  position: absolute;
+  top: 28%;
+  right: 3%;
+  margin-right: 3%;
+}
+
+header ul li {
+  display: inline-block;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: rgb(0, 230, 230);
+}
+
+.bafo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+#sidebar {
+  width: 25%;
+  height: 77.4%;
+  float: left;
+  background-color: rgba(230, 250, 255, 0.5);
+}
+
+#sidebar ul li ul li,
+#sidebar ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li a,
+#sidebar ul li ul li a {
+  text-decoration: none;
+  color: rgb(0, 179, 179);
+  font-size: 18px;
+  text-shadow: 0px 0px 0px rgb(0, 115, 153);
+  font-family: "Times New Roman", Times, serif;
+}
+
+#sections {
+  position: relative;
+  float: right;
+  width: 50%;
+  box-shadow: 0px 7px 10px gray;
+  margin: 6% 14% 0% 1%;
+  text-align: center;
+  background-color: rgba(230, 250, 255, 0.5);
+}
+
+#title {
+  text-shadow: 0px 0px 0px rgb(0, 115, 153);
+  color: rgb(0, 179, 179);
+}
+
+#question {
+  font-size: 25px;
+  color: rgb(0, 179, 179);
+  margin-bottom: 5%;
+  padding: 1px;
+  text-shadow: 0px 0px 0px rgb(0, 115, 153);
+  background: linear-gradient(135deg, gray, black);
+  background:;
+}
+
+button {
+  font-size: 20px;
+  margin-bottom: 1%;
+  border-radius: 5%;
+  padding: 14px 20px;
+  margin-right: 40px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 3px 3px white;
+  background:black;
+  color: rgb(0, 179, 179);
+  width: 65%;
+  cursor: pointer;
+    transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+button:hover{
+  border-bottom: 2px solid rgb(0, 230, 230);
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+#answers a {
+  display: block;
+  float: left;
+  width: 35%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.l {
+  margin-left: 19.9%;
+}
+
+#info {
+  position: relative;
+  border-radius: 15% 0px;
+  padding: 10px 1px;
+  float: right;
+  width: 50%;
+  box-shadow: 0px 7px 10px gray;
+  margin: 3% 14% 0% 1%;
+  text-align: center;
+  background-color: rgba(230, 250, 255, 0.9);
+}
+
+.para, .para1 {
+  color: black;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.para1 {
+   text-shadow: 0px 0px 0px rgb(0, 115, 153);
+  color: rgb(0, 179, 179);
+  margin-top: 5%;
+}
+
+#exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#help, #about {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+}
+
+#about {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.load {
+  text-decoration: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  width: 5%;
+  background-color: ;
+  color: black;
+  margin: 5px;
+  padding: 5px 2px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.load:hover{
+  background-color: red;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  height: 11.6%;
+  clear: both;
+}
+
+@media only screen and (max-width: 1024px){
+  body {
+   background-size: 100% 100%;
+  }
+
+  #sections {
+    background-color: rgba(230, 250, 255, 0.5);
+    width: 55%;
+    margin: auto; 
+    margin-right: 7%;
+    margin-top: 27%;
+    padding: 32px;
+    border: 3px solid white;
+  }
+
+  button {
+  font-size: 25px;
+  margin-bottom: 2px;
+  border-radius: 5%;
+  padding: 13px 15px;
+  width: 75%;
+}
+
+  #sidebar, footer{
+    display: none;
+    position: absolute;
+  }
+
+  #about, #help {
+    display: none;
+  }
+
+  .bafo{
+    display: block;
+    float: left;
+  }
+
+}
